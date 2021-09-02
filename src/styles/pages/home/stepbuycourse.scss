@@ -1,0 +1,62 @@
+.stepbuycourse {
+  padding: 20px 20px;
+  .content {
+    text-align: center;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .line {
+      width: 100px;
+      height: 1px;
+      border-top: 1px dotted #0000006e;
+      padding-bottom: 40px;
+    }
+    .step-group {
+      div {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        line-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        @include text(white, $fs-sm + 5, $fw-bold-1);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        background: $color-pr-1;
+        box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.24);
+        margin-bottom: 20px;
+      }
+      p {
+        @include text(rgba(0, 0, 0, 0.7), $fs-xs, $fw-bold-2);
+        margin-bottom: 0;
+        line-height: 17px;
+      }
+      &:first-child {
+        div {
+          background: $color-se-4;
+          color: $color-se-1;
+        }
+      }
+      &:nth-child(3) {
+        div {
+          background: $color-se-4;
+          color: $color-se-1;
+        }
+      }
+      &:nth-child(5) {
+        div {
+          background: $color-se-4;
+          color: $color-se-1;
+        }
+      }
+      &:last-child {
+        div {
+          background: $color-se-4;
+          color: $color-se-1;
+        }
+      }
+    }
+  }
+}
